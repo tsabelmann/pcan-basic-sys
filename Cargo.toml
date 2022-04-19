@@ -6,6 +6,7 @@ repository = "https://github.com/tsabelmann/pcan-basic-sys"
 description = "Auto-generated Rust bindings for the PCAN Basic API"
 license = "MIT/Apache-2.0"
 build = "build.rs"
+include = ["libs/*"]
 
 [build-dependencies]
 bindgen = "0.53.2"
