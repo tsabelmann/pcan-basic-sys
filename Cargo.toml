@@ -19,6 +19,5 @@ readme = "README.md"
 name = "pcan_basic_sys"
 path = "src/lib.rs"
 crate-type = ["lib"]
-include = ["libs/*"]
-build = "build.rs"
+
 
