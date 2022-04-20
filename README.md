@@ -3,6 +3,7 @@
 [![crates](https://img.shields.io/crates/v/pcan-basic-sys.svg)](https://crates.io/crates/pcan-basic-sys)
 [![Documentation](https://img.shields.io/docsrs/pcan-basic-sys.svg)](https://docs.rs/pcan-basic-sys)
 [![Crate License](https://img.shields.io/crates/l/pcan-basic-sys.svg)](https://crates.io/crates/pcan-basic-sys)
+[![Dependency Status](https://deps.rs/repo/github/tsabelmann/pcan-basic-sys/status.svg)](https://deps.rs/repo/github/tsabelmann/pcan-basic-sys)
 
 Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-system.com/PCAN-Basic.239.0.html) provided by [PEAK-System Technik GmbH](https://www.peak-system.com/).
 
