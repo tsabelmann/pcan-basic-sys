@@ -10,7 +10,7 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 ## Installation
 
 **Disclaimer**:
-> pcan-basic-sys is a Rust crate targeting the Windows platform. Other platforms, i.e., macOS and Linux are not supported.
+> `pcan-basic-sys` is a Rust crate targeting the Windows platform. Other platforms, i.e., macOS and Linux are not supported.
 
 ### Windows
 
