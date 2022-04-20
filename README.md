@@ -9,11 +9,21 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 
 ## Installation
 
-### Linux (not supported)
+**Disclaimer**:
+> pcan-basic-sys is a Rust crate targeting the Windows platform. Other platforms, i.e., macOS and Linux are not supported.
+
 ### Windows
 
-- PCANBasic.dll must be installed and findable in your path.
-- lib.exe must be in your path (C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\lib.exe)
+- Install the [PCAN-Basic API](https://www.peak-system.com/quick/DrvSetup)
+- Install Rust
+- Install a Rust Windows toolchain. Install at least one of the following toolchains: 
+    * `rustup add toolchain i686-pc-windows-gnu`
+    * `rustup add toolchain x86_64-pc-windows-gnu`
+    * `rustup add toolchain i686-pc-windows-msvc`
+    * `rustup add toolchain x86_64-pc-windows-msvc`
+- Use `pcan-basic-sys` as a dependency
+
+If you choose `MSVC` you need to install the **Visual Studio** toolchain.
 
 <!-- ## [Documentation]
 
