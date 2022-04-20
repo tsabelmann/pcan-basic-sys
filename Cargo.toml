@@ -12,8 +12,6 @@ homepage = "https://github.com/tsabelmann/pcan-basic-sys"
 documentation = "https://docs.rs/pcan-basic-sys"
 repository = "https://github.com/tsabelmann/pcan-basic-sys"
 readme = "README.md"
-include = ["build.rs", "libs/*"]
-build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -23,4 +21,6 @@ build = "build.rs"
 name = "pcan_basic_sys"
 path = "src/lib.rs"
 crate-type = ["lib"]
+include = ["libs/*"]
+build = "build.rs"
 
