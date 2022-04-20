@@ -12,7 +12,6 @@ homepage = "https://github.com/tsabelmann/pcan-basic-sys"
 documentation = "https://docs.rs/pcan-basic-sys"
 repository = "https://github.com/tsabelmann/pcan-basic-sys"
 readme = "README.md"
-include = ["libs/*"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
