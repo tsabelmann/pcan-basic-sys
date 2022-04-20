@@ -13,18 +13,18 @@ jobs:
         os: [windows-latest]
         toolchain: [stable]
         target:
-          - i686-pc-windows-msvc
+          - i686-pc-windows-gnu
           - x86_64-pc-windows-gnu
         include:
           - os: windows-latest
             toolchain: beta
             target:
-              - i686-pc-windows-msvc
+              - i686-pc-windows-gnu
               - x86_64-pc-windows-gnu
           - os: windows-latest
             toolchain: nightly
             target:
-              - i686-pc-windows-msvc
+              - i686-pc-windows-gnu
               - x86_64-pc-windows-gnu
     steps:
       - uses: actions-rs/toolchain@v1
