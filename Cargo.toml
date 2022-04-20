@@ -2,11 +2,20 @@
 name = "pcan-basic-sys"
 version = "0.2.0"
 authors = ["Christopher J. Woodall <chris.j.woodall@gmail.com>", "Tim Lucas Sabelmann <tim.sabelmann@hotmail.de>"]
-repository = "https://github.com/tsabelmann/pcan-basic-sys"
 description = "Auto-generated Rust bindings for the PCAN Basic API"
-license = "MIT/Apache-2.0"
-build = "build.rs"
-include = ["libs/*"]
+keywords = ["can", "ffi"]
+categories = ["external-ffi-bindings"]
+edition = "2018"
 
-[build-dependencies]
-bindgen = "0.53.2"
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/tsabelmann/pcan-basic-sys"
+documentation = "https://docs.rs/pcan-basic-sys"
+repository = "https://github.com/tsabelmann/pcan-basic-sys"
+readme = "README.md"
+include = ["libs/*"]
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
