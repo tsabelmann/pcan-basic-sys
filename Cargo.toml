@@ -12,6 +12,7 @@ homepage = "https://github.com/tsabelmann/pcan-basic-sys"
 documentation = "https://docs.rs/pcan-basic-sys"
 repository = "https://github.com/tsabelmann/pcan-basic-sys"
 readme = "README.md"
+path = "src/lib.rs"
 include = ["libs/*"]
 build = "build.rs"
 
