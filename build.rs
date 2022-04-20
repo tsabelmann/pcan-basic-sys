@@ -7,10 +7,7 @@ fn main() {
     // link against correct target
     if cfg!(windows) {
         if cfg!(target_arch = "x86") {
-            println!(
-                "cargo:rustc-link-search=native={}/libs/x86/",
-                manifest_dir
-            );
+            println!("cargo:rustc-link-search=native={}/libs/x86/", manifest_dir);
         } else if cfg!(target_arch = "x86_64") {
             println!(
                 "cargo:rustc-link-search=native={}/libs/x86_64/",
@@ -26,7 +23,6 @@ fn main() {
     // link against this library
     println!("cargo:rustc-link-lib=PCANBasic");
 }
-
 
 // fn main() {
 //     // Tell cargo to tell rustc to link the system bzip2
@@ -62,14 +58,12 @@ fn main() {
 //                 panic!("Unknown architecture");
 //             };
 
-
 //         let mut output_lib_path = PathBuf::from(&out_dir);
 //         output_lib_path.push("PCANBasic.lib");
 //         Command::new("lib.exe")
 //             .args(&["/def:PCANBasic.def", &format!("/OUT:{}", output_lib_path.to_str().unwrap()), machine])
 //             .status().expect("Could not run lib.exe");
 //     }*/
-
 //     println!("cargo:rustc-link-lib=PCANBasic");
 //     println!("cargo:rustc-link-search=native={}", out_dir);
 // }
