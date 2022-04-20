@@ -14,11 +14,11 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 - PCANBasic.dll must be installed and findable in your path.
 - lib.exe must be in your path (C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\lib.exe)
 
-## [Documentation]
+<!-- ## [Documentation]
 
 [Documentation]: https://docs.rs/pcan-basic-sys
 [PEAK-System Technik GmbH]: http://www.peak-system.com
-[PCAN-Basic API]: http://www.peak-system.com/fileadmin/media/files/pcan-basic.zip
+[PCAN-Basic API]: http://www.peak-system.com/fileadmin/media/files/pcan-basic.zip -->
 
 ## License / Terms of Usage
 
