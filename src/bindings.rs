@@ -153,6 +153,25 @@ pub const PCAN_CHANNEL_UNAVAILABLE: u32 = 0;
 pub const PCAN_CHANNEL_AVAILABLE: u32 = 1;
 pub const PCAN_CHANNEL_OCCUPIED: u32 = 2;
 pub const PCAN_CHANNEL_PCANVIEW: u32 = 3;
+pub const LOG_FUNCTION_DEFAULT: u32 = 0;
+pub const LOG_FUNCTION_ENTRY: u32 = 1;
+pub const LOG_FUNCTION_PARAMETERS: u32 = 2;
+pub const LOG_FUNCTION_LEAVE: u32 = 4;
+pub const LOG_FUNCTION_WRITE: u32 = 8;
+pub const LOG_FUNCTION_READ: u32 = 16;
+pub const LOG_FUNCTION_ALL: u32 = 65535;
+pub const TRACE_FILE_SINGLE: u32 = 0;
+pub const TRACE_FILE_SEGMENTED: u32 = 1;
+pub const TRACE_FILE_DATE: u32 = 2;
+pub const TRACE_FILE_TIME: u32 = 4;
+pub const TRACE_FILE_OVERWRITE: u32 = 128;
+pub const FEATURE_FD_CAPABLE: u32 = 1;
+pub const FEATURE_DELAY_CAPABLE: u32 = 2;
+pub const FEATURE_IO_CAPABLE: u32 = 4;
+pub const SERVICE_STATUS_STOPPED: u32 = 1;
+pub const SERVICE_STATUS_RUNNING: u32 = 4;
+pub const MAX_LENGTH_HARDWARE_NAME: u32 = 33;
+pub const MAX_LENGTH_VERSION_STRING: u32 = 256;
 pub const PCAN_MESSAGE_STANDARD: u32 = 0;
 pub const PCAN_MESSAGE_RTR: u32 = 1;
 pub const PCAN_MESSAGE_EXTENDED: u32 = 2;
@@ -185,56 +204,6 @@ pub const PCAN_TYPE_DNG: u32 = 2;
 pub const PCAN_TYPE_DNG_EPP: u32 = 3;
 pub const PCAN_TYPE_DNG_SJA: u32 = 5;
 pub const PCAN_TYPE_DNG_SJA_EPP: u32 = 6;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct tagLC_ID {
-    pub wLanguage: ::std::os::raw::c_ushort,
-    pub wCountry: ::std::os::raw::c_ushort,
-    pub wCodePage: ::std::os::raw::c_ushort,
-}
-#[test]
-fn bindgen_test_layout_tagLC_ID() {
-    assert_eq!(
-        ::std::mem::size_of::<tagLC_ID>(),
-        6usize,
-        concat!("Size of: ", stringify!(tagLC_ID))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<tagLC_ID>(),
-        2usize,
-        concat!("Alignment of ", stringify!(tagLC_ID))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<tagLC_ID>())).wLanguage as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tagLC_ID),
-            "::",
-            stringify!(wLanguage)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<tagLC_ID>())).wCountry as *const _ as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tagLC_ID),
-            "::",
-            stringify!(wCountry)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<tagLC_ID>())).wCodePage as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(tagLC_ID),
-            "::",
-            stringify!(wCodePage)
-        )
-    );
-}
 #[doc = ""]
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -526,6 +495,7 @@ fn bindgen_test_layout_tagTPCANChannelInformation() {
         )
     );
 }
+pub type TPCANChannelInformation = tagTPCANChannelInformation;
 extern "C" {
     #[doc = " <summary>"]
     #[doc = " Initializes a PCAN Channel"]
