@@ -19,3 +19,8 @@ build = "build.rs"
 
 [dependencies]
 
+[lib]
+name = "pcan_basic_sys"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
