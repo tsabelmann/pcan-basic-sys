@@ -10,12 +10,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest]
+        os: [windows-gnu-latest]
         toolchain: [stable]
         include:
-          - os: windows-latest
+          - os: windows-gnu-latest
             toolchain: beta
-          - os: windows-latest
+          - os: windows-gnu-latest
             toolchain: nightly
     steps:
       - uses: actions-rs/toolchain@v1
