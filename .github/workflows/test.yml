@@ -10,13 +10,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-gnu-latest]
+        os: [windows-latest]
         toolchain: [stable]
+        target:
+          - i686-pc-windows-msvc
+          - x86_64-pc-windows-gnu
         include:
-          - os: windows-gnu-latest
+          - os: windows-latest
             toolchain: beta
-          - os: windows-gnu-latest
+            target:
+              - i686-pc-windows-msvc
+              - x86_64-pc-windows-gnu
+          - os: windows-latest
             toolchain: nightly
+            target:
+              - i686-pc-windows-msvc
+              - x86_64-pc-windows-gnu
     steps:
       - uses: actions-rs/toolchain@v1
         with:
