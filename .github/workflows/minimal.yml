@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 name: With dependencies at minimal versions
 jobs:
