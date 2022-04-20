@@ -14,7 +14,7 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 
 ### Windows
 
-- Install the [PCAN-Basic API](https://www.peak-system.com/quick/DrvSetup)
+- Install the [PCAN-Basic API](https://www.peak-system.com/quick/DrvSetup) driver
 - Install Rust
 - Install a Rust Windows toolchain. Install at least one of the following toolchains: 
     * `rustup add toolchain i686-pc-windows-gnu`
