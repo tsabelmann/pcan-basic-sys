@@ -1,6 +1,6 @@
 [package]
 name = "pcan-basic-sys"
-version = "0.2.0"
+version = "1.0.0"
 authors = ["Christopher J. Woodall <chris.j.woodall@gmail.com>", "Tim Lucas Sabelmann <tim.sabelmann@hotmail.de>"]
 description = "Auto-generated Rust bindings for the PCAN Basic API"
 keywords = ["can", "ffi"]
