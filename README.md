@@ -17,10 +17,10 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 - Install the [PCAN-Basic API](https://www.peak-system.com/quick/DrvSetup) driver
 - Install Rust
 - Install a Rust Windows toolchain. Install at least one of the following toolchains: 
-    * `rustup add toolchain i686-pc-windows-gnu`
-    * `rustup add toolchain x86_64-pc-windows-gnu`
-    * `rustup add toolchain i686-pc-windows-msvc`
-    * `rustup add toolchain x86_64-pc-windows-msvc`
+    * `rustup toolchain install stable-i686-pc-windows-gnu`
+    * `rustup toolchain install stable-x86_64-pc-windows-gnu`
+    * `rustup toolchain install stable-i686-pc-windows-msvc`
+    * `rustup toolchain install stable-x86_64-pc-windows-msvc`
 - Use `pcan-basic-sys` as a dependency
 
 If you choose `MSVC` you need to install the **Visual Studio** toolchain.
