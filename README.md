@@ -25,12 +25,6 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 
 If you choose `MSVC` you need to install the **Visual Studio** toolchain.
 
-<!-- ## [Documentation]
-
-[Documentation]: https://docs.rs/pcan-basic-sys
-[PEAK-System Technik GmbH]: http://www.peak-system.com
-[PCAN-Basic API]: http://www.peak-system.com/fileadmin/media/files/pcan-basic.zip -->
-
 ## License / Terms of Usage
 
 The source code of this project is licensed under the MIT/Apache-2.0 license. This implies that you are free to use, share, and adapt it. However, please give appropriate credit by citing the project.
