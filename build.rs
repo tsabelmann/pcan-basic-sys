@@ -13,11 +13,7 @@ fn main() {
                 "cargo:rustc-link-search=native={}/libs/x86_64/",
                 manifest_dir
             );
-        } else {
-            panic!("Unknown architecture");
         }
-    } else {
-        panic!("Unsupported platform");
     }
 
     // link against this library
