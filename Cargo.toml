@@ -15,6 +15,10 @@ readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+targets = ["i686-pc-windows-msvc", "x86_64-pc-windows-msvc"]
+
 [lib]
 name = "pcan_basic_sys"
 path = "src/lib.rs"
