@@ -1,6 +1,6 @@
 [package]
 name = "pcan-basic-sys"
-version = "2.0.0"
+version = "2.0.1"
 authors = ["Christopher J. Woodall <chris.j.woodall@gmail.com>", "Tim Lucas Sabelmann <tim.sabelmann@hotmail.de>"]
 description = "Auto-generated Rust bindings for the PCAN Basic API"
 keywords = ["can", "ffi"]
@@ -14,6 +14,10 @@ repository = "https://github.com/tsabelmann/pcan-basic-sys"
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+targets = ["i686-pc-windows-msvc", "x86_64-pc-windows-msvc"]
 
 [lib]
 name = "pcan_basic_sys"
