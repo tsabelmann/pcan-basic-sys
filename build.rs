@@ -14,8 +14,12 @@ fn main() {
                 manifest_dir
             );
         }
+        // link against this library
+        println!("cargo:rustc-link-lib=PCANBasic");
+    } else {
+        // link against this library
+        println!("cargo:rustc-link-lib=pcanbasic");
     }
 
-    // link against this library
-    println!("cargo:rustc-link-lib=PCANBasic");
+    
 }
