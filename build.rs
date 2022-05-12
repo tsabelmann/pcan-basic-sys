@@ -20,6 +20,4 @@ fn main() {
         // link against this library
         println!("cargo:rustc-link-lib=pcanbasic");
     }
-
-    
 }
