@@ -9,9 +9,6 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 
 ## Installation
 
-**Disclaimer**:
-> `pcan-basic-sys` is a Rust crate targeting the Windows platform. Other platforms, i.e., macOS and Linux are not supported.
-
 ### Windows
 
 - Install the [PCAN-Basic API](https://www.peak-system.com/quick/DrvSetup) driver
@@ -24,6 +21,13 @@ Rust bindings for version `V4.6.0.600` of the [PCAN-Basic API](https://www.peak-
 - Use `pcan-basic-sys` as a dependency
 
 If you choose `MSVC` you need to install the **Visual Studio** toolchain.
+
+### Linux
+- Install the [PCAN-Basic chardev Driver and API](https://www.peak-system.com/fileadmin/media/linux/index.htm)
+- Install Rust
+- Install a Rust Linux toolchain.
+- Use `pcan-basic-sys` as a dependency
+
 
 ## License / Terms of Usage
 
@@ -51,3 +55,4 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 * [Christopher Woodall](https://github.com/cwoodall)
 * [Tim Lucas Sabelmann](https://github.com/tsabelmann)
+* [Asimm Hirani](https://github.com/AsimmHirani)
