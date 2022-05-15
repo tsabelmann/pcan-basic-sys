@@ -26,12 +26,10 @@ If you choose `MSVC` you need to install the **Visual Studio** toolchain.
 
 - Install the [PCAN-Basic API](http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.14.0.tar.gz) driver
 - Install Rust
-- Install a Rust Linux toolchaib. Install at least on of the following toolchains:
+- Install a Rust Linux toolchaib. Other Linux toolchains might work as well. Install at least on of the following toolchains:
   - `rustup toolchain install stable-i686-unknown-linux-gnu`
   - `rustup toolchain install stable-x86_64-unknown-linux-gnu`
 - Use `pcan-basic-sys` as a dependency
-
-
 
 ## License / Terms of Usage
 
