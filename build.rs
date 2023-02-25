@@ -57,6 +57,8 @@ fn main() {
         .allowlist_var("TPC_.*")
         // Allow types that begin with PCAN
         .allowlist_type("TPC_.*")
+        // Allow types that begin with tag
+        .allowlist_type("tag_.*")
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
