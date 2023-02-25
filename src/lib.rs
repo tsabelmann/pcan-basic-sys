@@ -3,4 +3,8 @@
 #![allow(non_snake_case)]
 #![allow(deref_nullptr)]
 
-include!("bindings.rs");
+use std::env;
+
+// include!("bindings.rs");
+
+include!(concat!(env!("OUT_DIR"), "/bindings.rs"));

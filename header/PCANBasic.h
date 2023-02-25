@@ -8,12 +8,12 @@
 //
 //  ------------------------------------------------------------------
 //  Author : Keneth Wagner
-//  Last change: 2021-10-01
+//  Last change: 2022-07-06
 //
 //  Language: ANSI-C
 //  ------------------------------------------------------------------
 //
-//  Copyright (C) 1999-2021  PEAK-System Technik GmbH, Darmstadt
+//  Copyright (C) 1999-2022  PEAK-System Technik GmbH, Darmstadt
 //  more Info at http://www.peak-system.com 
 //
 #ifndef __PCANBASICH__
