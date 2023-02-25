@@ -22,3 +22,6 @@ targets = ["i686-pc-windows-msvc", "x86_64-pc-windows-msvc", "i686-unknown-linux
 name = "pcan_basic_sys"
 path = "src/lib.rs"
 crate-type = ["lib"]
+
+[build-dependencies]
+bindgen = "0.64.0"
